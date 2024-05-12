@@ -1,4 +1,9 @@
 def muncul_sekali(angka):
+    muncul_sekali = []
+    for digit in angka:
+        if angka.count(digit) == 1: 
+            muncul_sekali.append(int(digit))  
+    return muncul_sekali
     return []
 
 if __name__ == '__main__':
